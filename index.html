@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tooth Fairy</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+
+	html {
+		  font-family: "Noto Sans KR", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		line-height: 1.7; word-break:keep-all}
+
+
+
+	body,h1,h2,h3,h4,h7,p,p3{margin: 0; padding: 0;background: black;}
+
+	nav ul{display: flex; width: 550px; padding: 0; margin: 0; background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); justify-content: center; align-items: center; margin: auto; }
+			nav ul li{width: 45%; list-style-type: none;}
+			nav ul li a
+							{text-align: center; 
+							padding: 12px 24px;
+							display: block;
+							text-decoration: none;
+							color: white;}
+			nav ul li a:hover {background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); color: blue;}
+				.menuflex{display: flex; justify-content: space-between;}
+
+				.logo{line-height: 40px; display: block; margin: 20px}
+
+	section{background: black;position: relative;}
+	.wrap{margin: auto; background: black;}
+	h1{color: white; font-size: 4rem; font-weight: 700px; text-align:center;padding-top: 150px; line-height: 1.2}
+	.flying{position: fixed;width: 15%; padding-left: 60px;top:120px}
+	p{color: white; font-size: 1.3rem; font-weight: 200px;text-align:center; padding-top: 12px;line-height: 1.5; padding-bottom: 75px}
+	.logo{width: 30%; margin: auto; display: block;}
+	
+	.city{background: url(city.jpg); background-size: 100%; height: 650px;  background-attachment: fixed; position: relative;}
+	
+	.fairy{position: absolute;top: 280px; right: 30px; transform: translate(-1%, -65%); z-index: 1; width: 35%}
+
+	
+
+	.story{margin: auto; background: black;position: relative;}
+	h2{color: white; font-size: 4rem; font-weight: 700px; text-align: center;padding-top:180px; border: 0;line-height: 1.4;}
+	.fairystory{width: 100%; margin: auto; }
+	h3{color: white; font-size: 1.6rem; font-weight: normal;text-align:left;line-height: 1.6;margin-top: 30px; margin: auto;padding-left: 200px; padding-bottom: 100px; width: 500}
+
+	section
+	.hurry{margin: auto; background: black;}
+	h4{color: blue; font-size: 3rem; font-weight: 500px; text-align: center;padding-top:250px; border: 0;line-height: 1.2}
+	.big{width: 70%;margin: auto; padding-top: 45px; padding-left: 190px}
+	h5{color: white; font-size: 1.6rem; font-weight: normal; text-align: center; line-height: 1,5; margin: auto; padding-bottom: 100px;padding-top:80px;line-height: 1,5}
+	
+	
+	
+
+	.wrap{width: 100%; margin: auto; background: linear-gradient(to bottom, black,blue)}
+    .flex{display: flex; gap:5%}
+	h6{color: white;font-size: 1.6rem; font-weight: normal; text-align: left;line-height: 1,5; width: 500px;padding-left: 100px; padding-top: 300px;padding-bottom: 100px};
+	.item{width: 45%}
+    .item-image{height: 75%; padding-left: 5%; padding-top: 100px; padding-bottom: 50px}
+	.apple{background: black;}
+
+	section
+	.container {display: flex;}
+	.left-column{flex: 1}
+	.right-column {flex: 1; width: 80px ; padding-right: 100px; color: white;text-align: left; padding-top: 300px; padding-left: 5%;font-size: 1.7rem; word-break: keep-all;}
+	
+	.image-container {position: relative;display: inline-block;}
+	.image-container .hover-image {display: none;}
+	.image-container:hover .hover-image {display: block;}
+	.image-container:hover img:not(.hover-image) {
+  opacity: 0;transition: opacity 0.3s ease;}
+
+	section
+	.center-text{text-align: center;padding-bottom: 75px}
+	h7{color: red;font-size: 3rem; font-weight: bold;line-height: 1,5; width: 500px; padding-top: 50px;}
+	p3{color: white; font-size: 1.5rem; }
+	.angry{width: 100%; padding-bottom: 90px}
+	.ba{width: 100%; padding-top: 200px; margin-bottom: 0}
+    
+
+	.friend{padding-top: 10%; background: linear-gradient(to bottom, black,blue)}
+	.st{position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%; padding-bottom: 20px}
+
+    .teethfriend{background: blue; padding-left: 80px}
+    .fr{width: 80%; margin: auto; padding-left: 125px}
+
+    .sleep{background: blue; position: relative; width: 100%}
+    .pi{width: 100%; height: auto; padding-top: 70px}
+    
+    	.pitext{position: absolute;top: 30%;left: 80%;
+        transform: translate(-50%, -50%);
+        color: white; width: 500px;
+        font-size: 25px;
+        text-align: left; line-height: 35px}
+
+    .wk{width: 100%; height: auto;}
+    	.wktext{position: absolute;top: 75%;left: 22%;
+        transform: translate(-50%, -50%);
+        color: white; width: 500px;
+        font-size: 25px;
+        text-align: left; line-height: 35px}
+
+    .final{background:linear-gradient(to top, black,blue); padding-left: 80px}
+    .A{width: 90%; padding-top: 20px; padding-bottom: 60px}
+
+   
+	footer div a{display: block; text-align: center;}
+		footer div a img{width:30%; height: 200px; display: block; text-align: center; margin: auto; }
+		footer .footer{text-align: center; color: white; padding-bottom: 5%}
+
+
+
+
+    section /* 이거 이빨 경매임*/
+    .Survice{background: black; padding-top: 200px; padding-left: 80px}
+    h9{color: white; font-size: 4rem; font-weight: bold; text-align:left; border: 0;line-height: 1.4;padding-bottom: 100px}
+    p4{color:lightgrey; font-size: 1.5rem; text-align:left; font-weight: bold;}
+
+    .grid-container{display: flex; flex-wrap: wrap; justify-content: space-between;padding-top: 50px; padding-bottom: 15px}
+    .grid-item{width: calc(33.33% - 10px); margin-top: 30px;position: relative;}
+    .grid-item img{width: 100%; height: auto; transition: opacity 0.3s ease}
+    .grid-item:hover img{opacity: 0.7}
+
+    .hover-image{position: absolute;
+        top: 0;left: 0;width: 100%;height: 100%;
+        opacity: 0;transition: opacity 0.3s ease;}
+    .grid-item:hover .hover-image {opacity: 1;
+/* 이거 이빨 경매임*/
+    
+
+  
+
+</style>
+</head>
+<body>
+	<section>
+		<div class="wrap" id="gg">
+		<img src="logo.png"class="logo">
+
+		<nav>
+		<ul>
+			<li> <a href="#aa">Story</a> </li>
+			<li> <a href="#bb">Survice</a> </li>
+			<li> <a href="#cc">Dentistry</a> </li>
+		</ul> </nav>
+		</div>
+		
+
+			<img src="flying.png" class="flying">
+			<h1>당신의 이빨요정을<br> 바로 여기서!</h1>
+			<p>어린이들을 위한 이빨 경매 서비스, 스피디한 교정 시술과 충치 치료를 선별된 요정들이 함께! <br>오직 Tooth Fairy에서만 만나볼 수 있는 최고의 서비스를 경험하세요.</p>
+		</div>
+	</section>
+
+	<section>
+		<img src="fairy.gif" class="fairy">
+		<div class="city"></div>
+	
+
+	</section>
+
+
+		<div class="story" id="aa">
+
+			<h2>다들 한 번쯤 들어봤을<br>이빨요정 이야기!</h2> 
+			<img src="story.gif" class=fairystory>
+			<h3>설화 속에서 등장하는 이빨요정! <br>아이들의 헌 이를 새 이로 바꿔주는 인간에게는 무해한 정령입니다. 아이들이 젓니를 뽑은 날, <br>주머니에 빠진 이를 넣어 베개 밑에 두고 잠을 자면 이빨 요정은 그 이를 가져가고 돈과 행운을 두고간다는 <br>이야기죠. 이빨요정은 아이들의 두려움을 달래주고 용기를 북돋아주는 소중한 친구입니다.</h3>	
+		</div>
+	</section>
+
+	<section>
+		<div class="hurry">
+			<h4>🌀급해요 급해🌀<br>이빨요정이 큰일났어요!</h4>
+			<img src="twinkle.gif" class="big">
+			<h5>이빨요정의 세계는 철저한 경쟁사회 입니다. 어린이들의 이빨을 많이 모은 요정은<br> 존경받는 등급으로 선정되어 더 크고 화려한 날개를 가질 수 있어요.</h5>
+		</div>
+
+   
+         	<div class="wrap flex">
+                <div class="item child item-image">  
+                	<img src="child.png" class="child"> 
+                </div>
+
+                <div class="item">
+                            <h6>또, 무엇보다 지정된 어린이의 전담 이빨요정이 될 수 있습니다. 꿈꾸는 어린이와 함께 성장하는 일, 이빨요정들에겐 그 무엇과도 바꿀 수 없는 소중한 일이죠.</h6>
+                    </div>
+		    </div>
+
+		    <div class="apple">
+		    	<h5>요정들은 언제나 그렇듯 매일 밤마다 날개뼈가 빠지도록 날아다니지만 요즘엔 이빨을 모으기가 참 쉽지 않아요.</h5>
+		    	<h4>어린이가 줄어들고 있는 시대! <br> 이빨요정들의 삶도 <br> 무너지기 시작했습니다!</h4>  
+		    </div>
+
+  	 </section>
+
+  	 <section>
+  	 	<div class="container">
+		  	<div class="left-column">
+			    <div class="image-container">
+			      <img src="stealing.png" alt="Normal Image">
+			      <img src="stealing_back.png" alt="Hover Image" class="hover-image">
+			    </div>
+		  	</div>
+		 	<div class="right-column">
+		   		<p2>어린이들이 풍족했던 때에 이빨에 대한 대가로 소소한 용돈을 지불했던 것과 지금은 전혀 다릅니다!<br><br> 이빨 값은 급등했고, 요정들의 경쟁은 치열해졌죠. 하지만 경제 관념이 없는 어린이들은 이기적인 요정들에게 마땅한 행운 값을 받지 못하거나 이빨을 도둑맞는 일이 빈번해지기 시작했어요</p2>
+		 	</div>
+		</div>
+  	 </section>
+
+
+  	<section>
+  		<div class="center-text">
+  			<img src="angry.gif" class=angry>
+  			<h7>경쟁하라! 쟁취하라! 선택받아라!</h7> <br><br>
+  			<p3>누가, 어떻게 이빨을 먼저 정당하게 쟁취할 것인가!?<br> 방법은 아주 명확하죠. <br>어린이의 선택을 받는다!</p3>
+  		</div>
+  	<section>
+  
+  		<h2>더 값지게 이빨 거래를 하고 싶나요?<br>정당한 행운값을 받고 싶나요?<br>믿음직한 요정들과 거래하고 싶나요?</h2>
+  		<img src="ba.gif" class="ba">
+  	
+  	</section>
+
+
+  	<section>
+  		<div class="Survice" id="bb">
+  			<h9>그래서 준비했습니다! <br> 어린이들을 위한 *이빨 경매 서비스*
+  			</h9>
+  			<p4> <br><br>어린이 여러분 걱정하지 마세요. Tooth Fairy에서 여러분의 행운을 보장합니다! 
+  			 <br>처음 이를 빼서 이빨요정과 거래하는 법을 모르시다면?<br> 전문 이빨 거래 요정들이 진행하는 이빨 경매에 참여하세요!</p4>
+
+		</div>
+
+		<div class="grid-container">
+			<div class="grid-item">
+				<img src="st.png" alt="Image 1">
+				<img class="hover-image" src="st2.png" alt="Hover Image 1">
+			</div>
+			<div class="grid-item">
+				<img src="at.png" alt="Image 2">
+				<img class="hover-image" src="at2.png" alt="Hover Image 2">
+
+			</div>
+			<div class="grid-item">
+				<img src="tt.png" alt="Image 3">
+				<img class="hover-image" src="tt2.png" alt="Hover Image 3">
+			</div>
+		  		</div>
+  	</section>
+
+
+  	<section>
+  		<div class="friend">
+  		<img src="start.png" class="st">
+  			<h5><br><br><br><br>*어금니* 경매 참여를 원하는 요정들이 여러분을 기다려요! <br>
+  			Eloise는 어금니 하나에 12,9000원을 제안했어요.</h5>
+  		</div>
+  	</section>
+
+
+  	<section>
+  		<div class="teethfriend" >
+  		<img src="friends.png" class="fr">
+  		<h9> <br><br><br>오래 걸리는 *치아 교정*을 <br>이빨요정의 마법으로 아프지 않게!</h9>
+  		</div>
+  	</section>
+
+  	<section>
+  	<div class="sleep" id="cc">
+  	<img src="pika.jpg" class="pi">	
+  		<div class="pitext">*젓니 다 빠진 당장 어린이들 주목!* <br><br>
+  		젖니가 모두 빠져 경매 할 일이 없는 초등학교 4~5학년 어린이를 위한 반짝 서비스! 이빨요정을 더이상 만나지 못할까봐 걱정하던 어린이들에게 찾아온 마지막 기회를 놓치지 마세요!</div>
+	<img src="wink1.jpg" class="wk">
+	<div class="wktext">*이제 못생긴 교정장치를 <br>잠 잘 때만 끼면 된다고?!* <br><br>
+  		이빨 요정이 직접 개발한 첨단 교정장치!<br>한달만 교정장치를 끼고 있어도 금새 가지런한 치열을 가질 수 있습니다. 잠 잘 때만! 딱 한달만! 안 아프게 우리 이뻐져요!</div>
+
+  	</section>
+
+  	<section>
+  		<div class="final">
+  		<h9> <br><br><br>고통도 재발도 없는<br>이빨요정만의 *충치 치료*</h9>
+  		<p4><br><br>여러분이 편히 자고있는 사이 이빨요정은 치료를 시작합니다<br>어린이들의 두려움을 최소화하기 위해 최선을 다하겠습니다! <br> 최고의 요정들과 함께하는 Tooth Fairy는 고통 없는 세상을 꿈꿉니다.</p4>
+  		<img src="final.gif" class="A">
+  		</div>
+  	</section>
+  	</div>
+
+ 	 <footer>
+		<div class="footer"><a href="#gg">
+  		<img src="footer.png"></a>
+  		Tooth Fairy <br>&copy;2024 김민경 모든 권리보유.<br> minsminskim018@gmail.com<br>
+  		<a href="https://www.instagram.com/m.mmings/" target="_blank">
+        <button> archives<br>✦✦✦@m.mmings✦✦✦</button>
+    </a>
+  		</div>
+  	</footer>
+
+</body>
+</html>
